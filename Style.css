@@ -1,0 +1,14 @@
+body{
+  text-align: center;
+  
+}
+#controls{
+  width: px;
+  height: px;
+}
+button{
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  font-size: 40px;
+}

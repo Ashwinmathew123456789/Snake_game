@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake game by ashwin</title>
+    <link rel="icon" type="image/png" href="123.png">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Snake game</h1>
+    <h2>score:<span id="score"></span></h2>
+    <div id="c">
+      <canvas height="400px" width="400px" id="canvas"></canvas>
+    </div>
+    
+    <label>game status <span ></span></label><br>
+    <div id="controls">
+      <button id="up">⬆️</button>
+      <button id="down" onclick="down()">⬇️</button>
+      <button id="left" onclick="left()">⬅️</button>
+      <button id="right" onclick="right()">➡️</button>
+    </div>
+    <script src="scrypt.js"></script>
+</body>
+</html>
