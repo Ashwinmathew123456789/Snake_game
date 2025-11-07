@@ -15,7 +15,7 @@ let score = 0;
 // onload function
 window.onload = function() {
   //  document.addEventListner("keydown", inputControl)
-  game = setInterval(main_game, 300);
+  game = setInterval(main_game, 500);
   //const intervalId = setInterval(() => {main_game()}, 1000);
 }
 
