@@ -10,12 +10,13 @@ let fpy = 120;
 let snake_tail = [];
 let snake_size = 1;
 let score = 0;
+let high_score;
 //let up = document.getElementById("up")
 
 // onload function
 window.onload = function() {
   //  document.addEventListner("keydown", inputControl)
-  game = setInterval(main_game, 500);
+  game = setInterval(main_game, 200);
   //const intervalId = setInterval(() => {main_game()}, 1000);
 }
 
@@ -42,7 +43,7 @@ function main_game() {
   }
 
   //backgrount colour and game area
-  canvas.fillStyle = "black";
+  canvas.fillStyle = "#1a2b43";
   canvas.fillRect(0, 0, 400, 400);
 
   //drawing line
@@ -54,12 +55,11 @@ function main_game() {
     canvas.moveTo(0, rl);
     canvas.lineTo(400, rl);
   }
-  canvas.strokeStyle = "#ffffff";
+  canvas.strokeStyle = "#1866d5";
   canvas.stroke();
 
   //snake body
-
-  canvas.fillStyle = "red";
+  canvas.fillStyle = "#10ff37";
 //  canvas.fillRect(spx, spy, 20, 20);
   for (let i = 0; i < snake_tail.length; i++) {
     canvas.fillRect(snake_tail[i].x, snake_tail[i].y, 20, 20);
@@ -71,9 +71,8 @@ function main_game() {
     }
   }
 
-
   //frut
-  canvas.fillStyle = "blue";
+  canvas.fillStyle = "#ff0909";
   canvas.fillRect(fpx, fpy, 20, 20);
 
 //frut change
@@ -88,10 +87,7 @@ function main_game() {
   while(snake_tail.length > snake_size){
     snake_tail.shift();
   }
-  
-  
 }
-
 
 // game control
 
